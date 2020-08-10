@@ -8,6 +8,7 @@
 		public function __construct(Array $parametros){
 			include('classes/phpmailer/PHPMailerAutoload.php');
 			$this->mailer = new PHPMailer();
+			
 			$this->mailer->IsSMTP();
 			$this->mailer->Host = 'SEU SERVER SMTP'; //SERVIDOR SMTP DA HOSPEDAGEM
 			$this->mailer->Port = 465; //PORTA DO SMTP
@@ -16,12 +17,16 @@
 			$this->mailer->SMTPSecure = 'ssl';
 			$this->mailer->Username = $this->email;
 			$this->mailer->Password = $this->senha;
+
 			$this->mailer->IsHTML(true);
 			$this->mailer->SingleTo = true;
+
 			$this->mailer->From = $this->email;
 			$this->mailer->FromName = $this->email;
+
 			$this->mailer->Subject = 'Nova mensagem do site!';
 			$this->addAdress($this->email,'Administrador');
+
 			$body = '';
 			foreach ($parametros as $key => $value) {
 				$body.=ucfirst($key).": ".$value;
