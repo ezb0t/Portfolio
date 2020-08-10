@@ -1,0 +1,476 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+html,body{
+	height: 100%;
+}
+
+.container{
+	max-width: 1024px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+header{
+	width: 100%;
+	height: 90vh;
+	min-height: 800px;
+	padding: 40px 2%;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../images/bg2.jpg');
+}
+
+header nav{
+	float: right;
+}
+
+nav.mobile{
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/menu.png');
+	background-size: 100% 100%;
+	color: black;
+}
+
+nav.mobile ul{
+	display: none;
+	transition: 1s;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 80px;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav.mobile ul li{
+	padding: 8px 0;
+	transition: 0.4s;
+	border-bottom: 1px solid black;
+}
+
+nav.mobile ul li:hover{
+	background-color: rgb(230,230,230);
+}
+
+nav.mobile ul li a{
+	color: black;
+	display: block;
+	text-decoration: none;
+}
+
+header .logo{
+	position: relative;
+	top: -10px;
+	float: left;
+	width: 160px;
+	height: 40px;
+	background-image: url('../images/logo2.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+header nav.desktop ul{
+	list-style-type: none;
+}
+
+header nav.desktop li{
+	float: left;
+	padding: 0 20px;
+}
+
+header nav.desktop li a{
+	text-decoration: none;
+	color: black;
+}
+
+.chamada1{
+	max-width: 600px;
+	float: right;
+	margin: 200px 250px;
+}
+
+.chamada1 h2{
+	text-align: center;
+	font-weight: 700;
+	font-size: 40px;
+	color: black;
+}
+
+.chamada1 p{
+	font-size: 15px;
+	color: black;
+	margin-top:10px;
+}
+
+section.sessao1{
+	width: 100%;
+	background-color: rgb(82, 82, 82);
+	padding: 0 2%;
+	height: 400px;
+}
+
+section.sessao1 .container{
+	max-width: 1000px;
+	height: calc(100% + 30px);
+}
+
+.texto-sessao1{
+	float: left;
+	width: 50%;
+	position: relative;
+	left: 55px;
+	margin-top: 60px;
+	padding-left: 80px;
+	color: white;
+}
+
+.texto-sessao1 h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.texto-sessao1 p{
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+.texto-sessao1 ul{
+	font-size: 15px;
+	list-style-position: outside;
+	padding-left: 15px;
+}
+
+.texto-sessao1 ul li{
+	width: 100%;
+	margin-top: 8px;
+}
+
+.btn1-texto{
+	background-color: #FF703D;
+	width: 165px;
+	height: 44px;
+	font-size: 13px;
+	font-weight: 700;
+	cursor: pointer;
+	margin-top:30px;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 30px;
+}
+
+.btn1-texto a{
+	text-decoration: none;
+	color: white;
+}
+
+.device-sessao1{
+	float: left;
+	width: 50%;
+	position: relative;
+	top: -60px;
+	height: 100%;
+	background-image: url('../images/device.png');
+	background-repeat: no-repeat;
+	background-size: 100% 75%;
+	left: 75px;
+}
+
+.sessao2{
+	padding: 50px 2% 2% 50px;
+	background: #d0d0d0;
+	text-align: center;
+}
+
+.sessao2 .container{
+	max-width: 1000px;
+}
+
+.sessao2 h2{
+	color: black;
+	font-weight: normal
+}
+
+.sessao2 p{
+	margin-top: 10px;
+	max-width: 900px;
+	display: inline-block;
+}
+
+section.diferenciais{
+	padding: 40px 0;
+}
+
+section.diferenciais > .container > h2{
+	text-align: center;
+	font-size: 27px;
+	font-weight: normal;
+	color: black;
+}
+
+.box-diferenciais{
+	margin-top: 40px;
+}
+
+.box-single-diferencial{
+	float: left;
+	width: 33.3%;
+	padding: 0 10px;
+}
+
+.box-single-diferencial h2{
+	font-size: 55px;
+	text-align: center;
+	color: #FF703D;
+
+}
+
+.box-single-diferencial p{
+	font-size: 15px;
+	color: black;
+}
+
+section.sessao4{
+	background-color: #d0d0d0;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.form{
+	text-align: center;
+	float: left;
+	width: 100%;
+	color: black;
+	padding-left: 10px;
+}
+
+.form h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.form form{
+	margin-top: 15px;
+}
+
+.form form input[type=text],
+.form form input[type=email]{
+	width: 90%;
+	max-width: 480px;
+	margin-top: 8px;
+	height: 58px;
+	padding-left: 8px;
+	line-height: 58px;
+	border: 1px solid rgb(200,200,200);
+}
+
+.form form input[type=text]:focus{
+	outline: none;
+}
+
+.form form input[type=email]:focus{
+	outline: none;
+}
+
+.form form textarea:focus{
+	outline: none;
+}
+
+.form form textarea{
+	resize: none;
+	width: 90%;
+	margin-top: 8px;
+	max-width: 480px;
+	padding: 15px;
+	border: 1px solid rgb(200,200,200);
+	height: 160px;
+}
+
+.form form input[type=submit]{
+	border: 0;
+	background-color: #FF703D;
+	width: 165px;
+	height: 44px;
+	font-size: 13px;
+	color: white;
+	cursor: pointer;
+	margin-top: 15px;
+	border-radius: 30px;
+}
+
+.form form input[type=submit]:focus{
+	outline: none;
+}
+
+footer{
+	padding: 20px 2%;
+	background-color: rgb(82, 82, 82);
+	color: white;
+}
+
+footer p:nth-of-type(1){
+	float: left;
+	font-size: 14px;
+}
+
+footer p:nth-of-type(2){
+	float: right;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 960px){
+	.chamada1{
+		max-width: none;
+		width: 100%;
+		text-align: center;
+		float: none;
+		margin: 170px 0;
+	}
+
+	.chamada1 h2{
+		font-weight: 300;
+		font-size: 30px;
+		padding: 0 0px;
+		color: black;
+	}
+
+	.chamada1 p{
+		font-size: 15px;
+		color: black;
+		margin-top: 10px;
+	}
+
+	.sessao2{
+		padding: 40px 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+	header{
+		width: 100%;
+		height: auto;
+		min-height: 90vh;
+		padding: 40px 2%;
+	}
+
+	nav.desktop{
+		display: none;
+	}
+
+	nav.mobile{
+		display: block;
+	}
+
+	section.sessao1{
+		padding: 40px 2%;
+		height: auto;
+		text-align: center;
+	}
+
+	.sessao1 .container{
+		height: auto;
+	}
+
+	.texto-sessao1{
+		width: 100%;
+		margin-top: 0;
+		padding-left: 0;
+		position: static; 
+		float: none;
+		display: inline-block;
+	}
+
+	.texto-sessao1 ul{
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	.texto-sessao1 ul li{
+		float: none;
+		text-align: left;
+	}
+
+	.btn1-texto{
+		display: inline-block;
+	}
+
+	.device-sessao1{
+		display: none;
+	}
+
+	.sessao2{
+		padding-top: 40px;
+	}
+
+	section.sessao4 .container{
+		text-align: center;
+	}
+
+	.form{
+		float: none;
+		width: 100%;
+	}
+
+	.form p{
+		display: inline-block;
+		float: none;
+	}
+
+	section.diferenciais{
+		background-color: rgb(220, 220, 220);
+	}
+
+	.box-diferenciais{
+		margin-top: 0;
+	}
+
+	.box-single-diferencial{
+		width: 100%;
+		margin-top: 12px;
+		text-align: center;
+	}
+
+	.box-single-diferencial p{
+		display: inline-block;
+		max-width: 400px;
+	}
+}
+
+@media screen and (max-width: 580px){
+	.part1{
+		width: 100%;
+		padding: 40px 0;
+	}
+
+	.part2{
+		width: 100%;
+		padding: 40px 0;
+	}
+
+	footer{
+		text-align: center;
+	}
+
+	footer p:nth-of-type(1){
+		float: none;
+	}
+
+	footer p:nth-of-type(2){
+		float: none;
+		margin-top: 8px;
+	}
+}
