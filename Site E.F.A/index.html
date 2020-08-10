@@ -94,10 +94,10 @@
 					<h2>Entre em contato</h2>
 					<form method="post" action="form.php">
 						<input type="hidden" name="nome do formulário" value="Formulário 1">
-						<input type="text" name="nome" placeholder="Nome*" required>
-						<input type="email" name="email" placeholder="E-mail*" required>
-						<input  type="text" name="telefone" placeholder="Telefone*" required>
-						<textarea name="mensagem" placeholder="Mensagem*" required></textarea>
+						<input type="text" name="nome" placeholder="Nome*">
+						<input type="email" name="email" placeholder="E-mail*">
+						<input  type="text" name="telefone" placeholder="Telefone*">
+						<textarea name="mensagem" placeholder="Mensagem*"></textarea>
 						<div class="clear"></div><!--clear-->
 						<div><input type="submit" value="Enviar"></div>
 					</form>
@@ -132,9 +132,7 @@
 									form.find('input[type=submit]').attr('value','Carregando');
 								},
 								success:function(data){
-									//Aqui você pode inserir uma div, por exemplo.
-									//Qualquer mensagem de sucesso, após o formulario ter sido enviado.
-									alert('Formulário foi enviado com sucesso!');
+									alert('Mensagem enviada com sucesso!');
 									form.find('input[type=submit]').removeAttr('disabled');
 									form.find('input[type=submit]').animate({'opacity':'1'})
 									form.find('input[type=submit]').attr('value','Enviar');
@@ -142,7 +140,7 @@
 								}
 							});
 					}else{
-						alert("Campos Vázios não são permitidos!");
+						alert("Campos vázios não são permitidos!");
 					}
 					return false;
 				})
