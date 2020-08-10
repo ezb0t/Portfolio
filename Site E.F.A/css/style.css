@@ -75,9 +75,8 @@ header .logo{
 	position: relative;
 	top: -10px;
 	float: left;
-	width: 160px;
-	height: 40px;
-	background-image: url('../images/logo2.png');
+	width: 100px;
+	height: 60px;
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
