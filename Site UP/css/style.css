@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+    /* Index */
+
+.navbar{
+    border-bottom: 1px solid #cccccc;
+}
+
+
+section.content-header{
+    background-color: whitesmoke;
+}
+
+.carousel{
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+.carousel-item img{
+    height: 700px;
+    width: 400px;
+}
+
+section.chamada{
+    background-color:rgb(140, 200, 245);
+    padding: 8px 0;
+    color: white;
+}
+
+section.chamada h2{
+    color: black;
+}
+
+section.content-pages{
+    background-color: whitesmoke;
+    padding: 30px 0;
+}
+
+section.content-pages h2{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+section.content-pages p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+footer.ft1{
+    padding: 30px 0 5px 0;
+    border-top: 1px solid #cccccc;
+    background-color: rgb(140, 200, 245);
+}
+
+.col-md-5 h3{
+    font-size: 28px;
+}
+
+.col-md-5 p{
+    font-size: 15px;
+}
+
+.col-md-3 h3{
+    font-size: 28px;
+}
+
+.col-md-3 p{
+    font-size: 15px;
+}
+
+.col-md-3 > a{
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 40px;
+    color: black;
+}
+
+footer.ft2{
+    background-color: rgb(130, 190, 240);
+    padding: 5px;
+    line-height: 5px;
+    text-align: center;
+}
+
+footer.ft2 h6{
+    font-weight: bold;
+
+}
+
+    /* Sobre */
+
+    /* Contato */
+
+section.contato{
+    padding: 40px 0;
+}
+
+section.contato h2{
+    color: black;
+    font-size: 25px;
+}
+
+section.contato p{
+    color: black;
+    font-size: 16px;
+}
+
+section.contato > .w100{
+	width: 100%;
+}
+
+section.contato > .w50{
+	width: 50%;
+}
+
+
+.col-md-6{
+	float: left;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+}
+
+.form h2{
+	font-size: 25px;
+}
+
+.col-md-6 p{
+	font-size: 16px;
+	font-weight: 300;
+	padding-right: 10px;
+}
+
+.col-md-6 form{
+	margin-top: 15px;
+}
+
+.col-md-6 form input[type=text],
+.col-md-6 form input[type=email]{
+    outline: none;
+	width: 90%;
+	max-width: 480px;
+	margin-top: 8px;
+	height: 50px;
+	padding-left: 12px;
+	line-height: 58px;
+    border: 1px solid rgb(200,200,200);
+    border-radius: 30px;
+}
+
+.col-md-6 form textarea{
+    outline: none;
+    border-radius: 30px;
+	width: 90%;
+	margin-top: 8px;
+	max-width: 480px;
+	padding: 15px;
+	border: 1px solid rgb(200,200,200);
+	height: 160px;
+}
+
+.col-md-6 form input[type=submit]{
+	border: 0;
+	background-color: rgb(140, 200, 245);
+	width: 165px;
+	height: 44px;
+	font-size: 13px;
+    color: black;
+    font-weight: bold;
+	cursor: pointer;
+	margin-top: 15px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.col-md-6 form input[type=submit]:focus{
+	outline: none;
+}
+
+.map-wraper3{
+	margin-top: 10px;
+	width: 100%;
+	max-width: 500px;
+	position: relative;
+}
+
+@media screen and (max-width: 960px){
+    .map > iframe{
+        width: 400px;
+
+    }
+}
+
+@media screen and (max-width: 768px){
+    .carousel-item img{
+        height: 200px;
+        width: 400px;
+    }
+}
