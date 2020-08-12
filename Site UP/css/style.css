@@ -31,9 +31,8 @@ section.content-header{
 }
 
 section.chamada{
-    background-color:rgb(140, 200, 245);
+    background-color:#17a2b8;
     padding: 8px 0;
-    color: white;
 }
 
 section.chamada h2{
@@ -47,8 +46,13 @@ section.content-pages{
 
 section.content-pages h2{
     padding-bottom: 20px;
+    color: black;
     text-align: center;
     font-size: 25px;
+}
+
+.bold{
+    color: #06277c;
 }
 
 section.content-pages p{
@@ -59,7 +63,8 @@ section.content-pages p{
 footer.ft1{
     padding: 30px 0 5px 0;
     border-top: 1px solid #cccccc;
-    background-color: rgb(140, 200, 245);
+    background-color: #17a2b8;
+    color: black;
 }
 
 .col-md-5 h3{
@@ -87,11 +92,21 @@ footer.ft1{
     color: black;
 }
 
+.col-md-4 h3{
+    font-size: 28px;
+}
+
+.col-md-4 p{
+    font-size: 15px
+}
+
 footer.ft2{
-    background-color: rgb(130, 190, 240);
+    border-top: 1px solid whitesmoke;
+    background-color: #17a2b8;
     padding: 5px;
     line-height: 5px;
     text-align: center;
+    color: black;
 }
 
 footer.ft2 h6{
@@ -104,6 +119,7 @@ footer.ft2 h6{
     /* Contato */
 
 section.contato{
+    background-color: whitesmoke;
     padding: 40px 0;
 }
 
@@ -115,14 +131,6 @@ section.contato h2{
 section.contato p{
     color: black;
     font-size: 16px;
-}
-
-section.contato > .w100{
-	width: 100%;
-}
-
-section.contato > .w50{
-	width: 50%;
 }
 
 
@@ -196,16 +204,118 @@ section.contato > .w50{
 	position: relative;
 }
 
-@media screen and (max-width: 960px){
-    .map > iframe{
-        width: 400px;
+    /* Galeria */
 
-    }
+section.galeria{
+    background-color: whitesmoke;
+}
+
+.col-sm-2{
+    padding: 20px 2%;
+    text-align: center;
+}
+
+.flex-column > a{
+    background-color: #06277c;
+    color: white;
 }
 
 @media screen and (max-width: 768px){
     .carousel-item img{
-        height: 200px;
-        width: 400px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .col-sm3{
+        padding: 0px 2%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .navbar-brand{
+        display: none;
+    }
+
+    section.content-pages h2{
+        font-size: 18px;
+    }
+
+    section.content-pages p{
+        font-size: 13px;
+    }
+
+    .col-md-5 h3{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .col-md-5 p{
+        font-size: 13px;
+    }
+    
+    .col-md-3 h3{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .col-md-3 a{
+        font-size: 15px;
+    }
+
+    .col-md-4 h3{
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .col-md-4 p{
+        font-size: 13px
+    }
+
+    section.contato h2{
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    section.contato p{
+        font-size: 13px;
+    }
+
+    form{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .map > iframe{
+        width: 355px;
+        height: 355px;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .map > iframe{
+        width: 340px;
+        height: 340px;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .map > iframe{
+        width: 300px;
+        height: 300px;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .map > iframe{
+        width: 260px;
+        height: 260px;
+        padding: 0 2%;
     }
 }
