@@ -211,13 +211,42 @@ section.galeria{
 }
 
 .col-sm-2{
-    padding: 20px 2%;
+    padding: 20px 0;
     text-align: center;
 }
 
 .flex-column > a{
     background-color: #06277c;
     color: white;
+}
+
+.text-center{
+    padding: 20px 0;
+}
+
+.img-wraper{
+	width: 15%;
+	padding-top: 15%;
+	float: left;
+	background-color: white;
+	position: relative;
+	border: 4px solid whitesmoke;
+}
+
+.img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img:hover{
+    cursor: pointer;
+    border: 2px solid #cccccc;
 }
 
 @media screen and (max-width: 768px){
