@@ -19,6 +19,15 @@
                 $('.btn-add').click(function(){
                     var el = '<div class="anotacao-single"><textarea placeholder="Nova anotação"></textarea></div>';
                     $('.container').append(el);
+
+                    var textArea = $('.anotacao-single').last().find('textarea');
+
+                    var date = new Date();
+                    var hh = date.getHours();
+                    var mm = date.getMinutes();
+
+                    var finalTime = hh+"h"+mm;
+                    textArea.html("Nova anotação: "+finalTime);
                 })
             })
         </script>
