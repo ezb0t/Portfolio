@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clientes | Listagem</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h2>Clientes cadastrados:</h2>
+<ul>
+<% lista.forEach(function(user){ %>
+		<li><%= user.empresa %></li>
+<% }) %>
+</ul>
+</body>
+</html>
