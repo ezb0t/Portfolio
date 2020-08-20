@@ -3,27 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <title>Projeto_11</title>
     </head>
     <body>
         <header>
-            <div class="container">
+            <div class="center">
                 <div class="logo">
-                    <a href="#"><img src="images/logo.png"></a>
+                    <a href="index.html"><img src="images/logo.png"></a>
                 </div><!--logo-->
                 <div class="menu">
-                    <a href="#">Sobre</a>
-                    <a href="#">Depoimentos</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#depoimentos">Depoimentos</a>
                     <a class="btn-cta" href="#">Baixar agora</a>
                 </div><!--menu-->
                 <div class="clear"></div><!--clear-->
-            </div><!--container-->
+            </div><!--center-->
         </header>
 
         <section class="topo">
-            <div class="container">
+            <div class="center">
                 <div class="texto-topo">
                     <h2>Desafie seus amigos nesse multiplayer repleto de aventuras.</h2>
                     <p>Posuere porta nam euismod quisque aliquam elit leo, blandit eros vitae nibh dapibus tortor dictum dapibus, porta fermentum cras felis elit erat. </p>
@@ -34,22 +35,87 @@
                     <img src="images/hero.jpg">
                 </div><!--img-topo-->
                 <div class="clear"></div><!--clear-->
-            </div><!--container-->
+            </div><!--center-->
         </section><!--topo-->
 
-        <section class="depoimentos">
-            <div class="container">
+        <section id="depoimentos" class="depoimentos">
+            <div class="center">
                 <div class="depoimento-single">
-                    <p>Etiam posuere et leo ac proin elementum dapibus aliquam, donec odio at gravida dui donec.</p>
+                    <p>"O melhor jogo do ano! Incrível como consigo aprender e me divertir ao mesmo tempo!"</p>
                     <br>
-                    <span>Mahen Vezou</span>
+                    <span>Geovani - App Store</span>
                 </div><!--depoimento-single-->
                 <div class="depoimento-single">
-                    <p>Vel molestie erat hendrerit vivamus lectus, vehicula maecenas vestibulum fermentum tempor, semper porttitor erat at.</p>
+                    <p>"Não consigo parar de jogar! É tão envolvente, os desafios são muito divertidos. Jogo com meus pais e amigos toda hora!!"</p>
                     <br>
-                    <span>Raivi Baul</span>
+                    <span>Luciana - Google Play</span>
                 </div><!--depoimento-single-->
-            </div><!--container-->
+            </div><!--center-->
         </section><!--depoimentos-->
+
+        <section id="sobre" class="sobre">
+            <div class="center">
+                <div class="titulo-sobre">
+                    <h2 style="color: #11223f;">SOBRE O JOGO</h2>
+                </div><!--titulo-sobre-->
+                <div class="sobre-single">
+                    <div class="titulo-single">
+                        <i class="fas fa-users"></i>
+                        <h3>Totalmente Multiplayer</h3>
+                    </div><!--titulo-single-->
+                    <div class="sobre-conteudo">
+                        <p>Divirta-se com seus amigos e veja quem é o melhor da rodada!</p>
+                    </div><!--sobre-conteudo-->
+                    <div class="clear"></div><!--clear-->
+                </div><!--sobre-single-->
+                <div class="sobre-single">
+                    <div class="titulo-single">
+                        <i class="fas fa-star"></i>
+                        <h3>Desafios toda semana!</h3>
+                    </div><!--titulo-single-->
+                    <div class="sobre-conteudo">
+                        <p>Vivamus tincidunt fringilla commodo. Integer ac lorem orci. Praesent pulvinar eget.</p>
+                    </div><!--sobre-conteudo-->
+                    <div class="clear"></div><!--clear-->
+                </div><!--sobre-single-->
+                <div class="sobre-single">
+                    <div class="titulo-single">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Jogue em todas as plataformas</h3>
+                    </div><!--titulo-single-->
+                    <div class="sobre-conteudo">
+                        <p>Quisque sapien quam, tempus nec mauris cel, egestas porttitor ante.</p>
+                    </div><!--sobre-conteudo-->
+                    <div class="clear"></div><!--clear-->
+                </div><!--sobre-single-->
+                <div class="clear"></div><!--clear-->
+            </div><!--center-->
+        </section><!--sobre-->
+
+        <footer>
+            <div class="center">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png"></a>
+                </div><!--logo-->
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <div class="texto-footer">
+                    <p>Desenvolvido com <i class="fas fa-heart"></i></p>
+                </div><!--texto-footer-->
+                <div class="clear"></div><!--clear-->
+            </div><!--center-->
+        </footer>
+
+        <script>
+            $(function(){
+                $('nav a').click(function(){
+                    var href = $(this).attr('href');
+                    var offSetTop = $(href).offset().top;
+                    $('html,body').animate({'scrollTop':offSetTop});
+                    return false;
+                })
+            })
+        </script>
     </body>
 </html>
