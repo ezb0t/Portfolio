@@ -2,4 +2,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    margin-top: 10px;
+}
+
+.logo{
+    float: left;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+.menu{
+    float: right;
+    margin-top: 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.menu a.btn-cta{
+    background-color: #30851D;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
 }
