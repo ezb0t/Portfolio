@@ -49,3 +49,94 @@ header{
     padding: 10px 25px;
     font-size: 16px;
 }
+
+section.topo{
+    background-color: white;
+    padding: 30px 0;
+    margin-top: 10px;
+}
+
+.texto-topo{
+    margin-top: 30px;
+    float: left;
+    width: 50%;
+}
+
+.texto-topo h2{
+    font-size: 40px;
+    color: #11223F;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+.texto-topo p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding-right: 20px;
+}
+
+.texto-topo a{
+    margin-right: 15px;
+}
+
+.img-topo{
+    float: left;
+    width: 50%;
+}
+
+.img-topo img{
+    max-width: 100%;
+}
+
+section.depoimentos{
+    padding: 30px 0;
+}
+
+section.depoimentos >.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.depoimento-single{
+    background-color: white;
+    background-image: url('../images/quote.png');
+    background-size: 55px 45px;
+    background-position: calc(100% - 10px) 10px;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-bottom: 10px;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.depoimento-single p{
+    font-weight: bold;
+    color: black;
+    font-size: 13px;
+}
+
+.depoimento-single span{
+    color: #30851D;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 960px){
+    .texto-topo{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .texto-topo,
+    .img-topo{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .depoimento-single{
+        width: 100%;
+        margin-right: 0;
+    }
+}
