@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: gray;
+    background-color: black;
 }
 
 .container{
@@ -100,8 +100,19 @@ section.destaque{
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 600px;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.video-destaque{
+    min-width: 100%;
+    min-height: 100%;
     position: absolute;
+    left: 0;
+    top: 0;
     z-index: 1;
 }
 
@@ -112,24 +123,22 @@ section.destaque{
     top: 0;
     width: 100%;
     height: 100%;
-    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.51) 51%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.51) 51%,rgba(0,0,0,0) 100%);
-    background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.51) 51%,rgba(0,0,0,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.74) 31%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.74) 31%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.74) 31%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ffffff',GradientType=1 );
 }
 
 .texto-destaque{
     z-index: 3;
     color: white;
     position: relative;
-    margin-top: 80px;
+    margin-top: 0px;
     margin-left: 4%;
 }
 
-.texto-destaque h2{
-    color: #E50914;
-    font-size: 60px;
-    text-transform: uppercase;
+.texto-destaque img{
+    width: 500px;
 }
 
 .texto-destaque h3{
@@ -150,9 +159,11 @@ section.destaque{
     margin-right: 10px;
     display: inline-block;
     border-radius: 4px;
+    margin-bottom: 15px;
 }
 
 .texto-destaque a:hover{
     background-color: white;
     color: black;
 }
+
