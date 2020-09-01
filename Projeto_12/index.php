@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Descrição do meu site.">
         <meta name="keywords" content="palavras-chave,do,meu,site">
+        <link rel="shortcut icon" type="image-x/png" href="images/cinzaico.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
@@ -13,13 +14,14 @@
 	<body>
 		<header>
 			<div class="center">
-				<div class="logo left">Logomarca</div><!--logo-->
+				<div class="logo left"><a href="#">Logomarca</a></div><!--logo-->
 				<nav class="desktop right">
 					<ul>
 						<li><a href="">Home</a></li>
-						<li><a href="">Sobre</a></li>
-						<li><a href="">Serviços</a></li>
-						<li><a href="">Contato</a></li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#especialidades">Especialidades</a></li>
+						<li><a href="#depoimentos">Depoimentos</a></li>
+						<li><a href="#servicos">Serviços</a></li>
 					</ul>
 				</nav><!--desktop-->
 				<nav class="mobile right">
@@ -28,16 +30,17 @@
 					</div><!--btn-mobile-->
 					<ul>
 						<li><a href="">Home</a></li>
-						<li><a href="">Sobre</a></li>
-						<li><a href="">Serviços</a></li>
-						<li><a href="">Contato</a></li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#especialidades">Especialidades</a></li>
+						<li><a href="#depoimentos">Depoimentos</a></li>
+						<li><a href="#servicos">Serviços</a></li>
 					</ul>
 				</nav><!--mobile-->
 				<div class="clear"></div><!--clear-->
 			</div><!--center-->
 		</header>
 
-		<section class="banner-principal">
+		<section id="home" class="banner-principal">
 			<div class="overlay"></div><!--overlay-->
 			<div class="center">
 				<form>
@@ -48,7 +51,7 @@
 			</div><!--center-->
 		</section><!--banner-principal-->
 
-		<section class="descricao-autor">
+		<section id="sobre" class="descricao-autor">
 			<div class="center">
 				<div class="w50 left">
 				<h2 class="title">Alan Sato</h2>
@@ -62,7 +65,7 @@
 			</div><!--center-->
 		</section><!--descricao-autor-->
 
-		<section class="especialidades">
+		<section id="especialidades" class="especialidades">
 			<div class="center">
 				<h2 class="title">Minhas especialidades</h2><!--title-->
 				<div class="box-especialidade w33 left">
@@ -84,7 +87,7 @@
 			</div><!--center-->
 		</section><!--especialidades-->
 
-		<section class="extras">
+		<section id="depoimentos" class="extras">
 			<div class="center">
 				<div class="w50 left depoimentos-container">
 					<h2 class="title">Depoimentos dos nossos clientes</h2><!--title-->
@@ -103,7 +106,7 @@
 				</div><!--w50-->
 				<div class="w50 left servicos-container">
 					<h2 class="title">Serviços</h2><!--title-->
-					<div class="servicos">
+					<div id="servicos" class="servicos">
 						<ul>
 							<li>Sapien turpis tempor porta sit ante est sodales vehicula, elementum placerat ultricies eleifend quisque nibh elit suscipit habitasse, curae rutrum hendrerit leo volutpat nisi feugiat. morbi platea sollicitudin vulputate etiam hac est dictum, sodales dictum diam aenean sem diam.</li>
 							<li>Ut etiam lorem varius ultricies ad tempus nostra praesent nulla justo ultricies id proin, quis donec suscipit porttitor ullamcorper vestibulum nec metus leo hac molestie scelerisque rhoncus, malesuada conubia vel sem ad sodales tellus ultrices senectus cras porta quis.</li>
@@ -120,5 +123,8 @@
 				<p>© Todos os direitos reservados.</p>
 			</div><!--center-->
 		</footer>
-	</body>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/scripts.js"></script> 
+	</body> 
 </html>
