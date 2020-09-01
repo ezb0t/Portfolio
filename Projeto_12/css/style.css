@@ -49,9 +49,14 @@ header{
 
 header .logo{
 	font-size: 25px;
-	color: white;
 	font-weight: 300;
 	text-transform: uppercase;
+}
+
+header .logo a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
 }
 
 nav.desktop ul{
@@ -288,7 +293,7 @@ footer p{
 		left: 0;
 		top: 80px;
 		z-index: 3;
-		display: block;
+		display: none;
 		text-align: center;
 		width: 100%
 	}
@@ -299,7 +304,7 @@ footer p{
 		display: block;
 		background-color: white;
 		border-bottom: 1px solid #444444;
-		padding: 10px 0
+		padding: 10px 0;
 	}
 
 	nav.mobile li a{
