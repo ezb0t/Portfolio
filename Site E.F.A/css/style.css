@@ -318,6 +318,14 @@ section.sessao4{
 	outline: none;
 }
 
+.btn-wp{
+	padding: 15px;
+	background-color: #34af23;
+	color: white;
+	border-radius: 40px;
+	text-decoration: none;
+}
+
 footer{
 	padding: 20px 2%;
 	background-color: rgb(82, 82, 82);
@@ -344,7 +352,7 @@ footer p:nth-of-type(2){
 	}
 
 	.chamada1 h2{
-		font-weight: 300;
+		font-weight: bold;
 		font-size: 30px;
 		padding: 0 0px;
 		color: black;
