@@ -1,10 +1,8 @@
 <?php
-	class Email
-	{
+	class Email{
 		private $mailer;
 
-		public function __construct($host,$username,$senha,$name)
-		{
+		public function __construct($host,$username,$senha,$name){
 			$this->mailer = new PHPMailer;
 			$this->mailer->isSMTP();
 			$this->mailer->Host = $host;
