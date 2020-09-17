@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    background-color: rgb(225, 225, 225);
+}
+
+input{
+    border: 0;
+    outline: none;
+}
+
+    /* Página de Login */
+
+.box-login{
+    max-width: 600px;
+    width: 95%;
+    padding: 60px 2%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-box-shadow: 8px 8px 2px -5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 8px 8px 2px -5px rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 2px -5px rgba(0,0,0,0.5);
+}
+
+.box-login img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 80px;
+    margin: 0;
+}
+
+.box-login h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.box-login input[type=text],
+.box-login input[type=password]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #cccccc;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+.box-login input[type=submit]{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 8px;
+    background-color: #2196f3;
+    color: white;
+    font-size: 14px;
+}
+
+    /* Box de erro do painel */
+
+.erro-box{
+	width: 100%;
+	padding: 8px 2%;
+	text-align: center;
+	background-color: #F75353;
+	color: white;
+	font-size: 15px;
+}
+
+    /* Fim da página de Login */
+
+    /* Painel de controle */
+
+.clear{
+    clear: both;
+}
+
+.center{
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.logout{
+    float: right;
+}
+
+.logout a{
+    padding: 0 20px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.loggout a > span{
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.menu-btn{
+	float: left;
+	cursor: pointer;
+	font-size: 20px;
+	color: white;
+}
+
+.menu-wraper{
+    width:250px;
+}
+
+.menu{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    padding: 10px 0;
+    background-color: #455a64;
+    float: left;
+    width: 250px;
+}
+
+header{
+    float: left;
+    padding: 10px 0;
+    background-color: #546e7a;
+    width: calc(100% - 250px);
+}
+
+.content{
+	width: calc(100% - 250px);
+	position: relative;
+	left: 250px;
+	padding: 2%;
+}
+
+.items-menu{
+	margin-top: 30px;
+}
+
+.items-menu h2{
+	text-align: left;
+	font-weight: normal;
+	font-size: 17px;
+	background: #2F3D42;
+	color: white;
+	padding:8px;
+}
+
+.items-menu a{
+	display: block;
+	padding: 8px;
+	font-weight: 300;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid #2F3D42;
+}
+
+.box-usuario{
+	padding: 8px;
+	text-align: center;
+}
+
+.avatar-usuario{
+	text-align: left;
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: 3px solid #2F3D42;
+}
+
+.avatar-usuario i{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	font-size: 50px;
+	color: #2F3D42;
+}
+
+.imagem-usuario{
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	position: relative;
+	border-radius: 50%;
+	border: 3px solid #2F3D42;
+}
+
+.imagem-usuario img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.nome-usuario{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.nome-usuario p{
+	color: white;
+	font-size: 15px;
+	font-weight: 400;
+}
