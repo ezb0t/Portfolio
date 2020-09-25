@@ -1,6 +1,11 @@
 <?php include('config.php'); ?>
 <?php Site::updateUsuarioOnline(); ?>
 <?php Site::contador(); ?>
+<?php
+	$infoSite = MySql::conectar()->prepare("SELECT * FROM `tb_site.config`");
+	$infoSite->execute();
+	$infoSite = $infoSite->fetch();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -12,7 +17,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
         <link rel="shortcut icon" type="image-x/png" href="<?php echo INCLUDE_PATH; ?>images/ico.ico">
         <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>css/style.css">
-        <title>Projeto_12</title>
+        <title><?php echo $infoSite['titulo']; ?></title>
     </head>
     <body>
         <base base="<?php echo INCLUDE_PATH; ?>">
@@ -32,7 +37,6 @@
                     break;
             }
         ?>
-
         <div class="sucesso">
             <i class="fas fa-check"></i> Formulário enviado com sucesso!
         </div><!--sucesso-->
@@ -98,6 +102,7 @@
         ?>
         <script src="<?php echo INCLUDE_PATH; ?>js/slider.js"></script>
         <?php } ?>
+        <script src="<?php echo INCLUDE_PATH; ?>js/exemplo.js"></script>
         <script src="<?php echo INCLUDE_PATH; ?>js/forms.js"></script>
     </body>
 </html>

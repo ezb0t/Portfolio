@@ -10,7 +10,7 @@
 		}
 
 		public static function userExists($user){
-			$sql = MySql::conectar()->prepare("SELECT `id` FROM `tb_admin.usuarios` WHERE user=?");
+			$sql = MySql::conectar()->prepare("SELECT `id` FROM `tb_admin.usuarios` WHERE user = ?");
 			$sql->execute(array($user));
 			if($sql->rowCount() == 1)
 				return true;

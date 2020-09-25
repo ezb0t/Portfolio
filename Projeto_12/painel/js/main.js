@@ -52,9 +52,9 @@ $(function(){
 	$('[actionBtn=delete]').click(function(){
 			var txt
 			var r = confirm("Deseja excluir o registro?")
-			if (r == true) {
+			if(r == true){
 			    return true
-			} else {
+			}else{
 			    return false
 			}
 	})

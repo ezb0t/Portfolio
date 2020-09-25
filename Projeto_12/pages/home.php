@@ -32,19 +32,34 @@
 	<div class="center">
 		<h2 class="title">Especialidades</h2>
 		<div class="w33 left box-especialidade">
-			<h3><i class="<?php echo $infoSite['icone1']; ?>" aria-hidden="true"></i></h3>
-			<h4>CSS3</h4>
+			<h3><i style="color: #F16529" class="<?php echo $infoSite['icone1']; ?>"></i></h3>
+			<h4>HTML5</h4>
 			<p><?php echo $infoSite['descricao1']; ?></p>
 		</div><!--box-especialidade-->
 		<div class="w33 left box-especialidade">
-			<h3><i class="<?php echo $infoSite['icone2']; ?>" aria-hidden="true"></i></h3>
-			<h4>HTML5</h4>
+			<h3><i style="color: #0070BA" class="<?php echo $infoSite['icone2']; ?>"></i></h3>
+			<h4>CSS3</h4>
 			<p><?php echo $infoSite['descricao2']; ?></p>
 		</div><!--box-especialidade-->
 		<div class="w33 left box-especialidade">
-			<h3><i class="<?php echo $infoSite['icone3']; ?>" aria-hidden="true"></i></h3>
+			<h3><i style="color: #F0BE25" class="<?php echo $infoSite['icone3']; ?>"></i></h3>
 			<h4>JavaScript</h4>
 			<p><?php echo $infoSite['descricao3']; ?></p>
+		</div><!--box-especialidade-->
+		<div class="w33 left box-especialidade">
+			<h3><i style="color: #4AD5FF" class="<?php echo $infoSite['icone4']; ?>"></i></h3>
+			<h4>React.JS</h4>
+			<p><?php echo $infoSite['descricao4']; ?></p>
+		</div><!--box-especialidade-->
+		<div class="w33 left box-especialidade">
+			<h3><i style="color: #87BD2F" class="<?php echo $infoSite['icone5']; ?>"></i></h3>
+			<h4>Node.JS</h4>
+			<p><?php echo $infoSite['descricao5']; ?></p>
+		</div><!--box-especialidade-->
+		<div class="w33 left box-especialidade">
+			<h3><i style="color: #CE0303" class="<?php echo $infoSite['icone6']; ?>"></i></h3>
+			<h4>Angular.JS</h4>
+			<p><?php echo $infoSite['descricao6']; ?></p>
 		</div><!--box-especialidade-->
 		<div class="clear"></div><!--clear-->
 	</div><!--center-->
@@ -58,7 +73,7 @@
 				$sql = MySql::conectar()->prepare("SELECT * FROM `tb_site.depoimentos` ORDER BY order_id ASC LIMIT 3");
 				$sql->execute();
 				$depoimentos = $sql->fetchAll();
-				foreach ($depoimentos as $key => $value) {
+				foreach($depoimentos as $key => $value){
 			?>
 			<div class="depoimento-single">
 				<p class="depoimento-descricao">"<?php echo $value['depoimento']; ?>"</p>
@@ -74,7 +89,7 @@
 				$sql = MySql::conectar()->prepare("SELECT * FROM `tb_site.servicos` ORDER BY order_id ASC LIMIT 3");
 				$sql->execute();
 				$servicos = $sql->fetchAll();
-				foreach ($servicos as $key => $value) {
+				foreach($servicos as $key => $value){
 				?>
 				<li><?php echo $value['servico']; ?></li>
 				<?php } ?>
