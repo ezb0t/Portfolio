@@ -1,5 +1,5 @@
 <div class="box-content">
-    <h2><i class="fas fa-edit"></i> Editar Usuário</h2>
+    <h2><i class="fas fa-user-edit"></i> Editar Usuário</h2>
     <form method="post" enctype="multipart/form-data">
         <?php
             if(isset($_POST['acao'])){

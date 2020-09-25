@@ -19,6 +19,10 @@ input{
     outline: none;
 }
 
+textarea{
+	outline: none;
+}
+
     /* Página de Login */
 
 .box-login{
@@ -273,15 +277,12 @@ table{
 }
 
 table tr:nth-of-type(1){
-	background-color: #0091ea;
+	background-color: #696969;
 	color: white;
 }
 
 table tr{
-	border-bottom: 1px solid #ccc;
-}
-
-table tr{
+	border-bottom: 1px solid #cccccc;
 	color: #555555;
 }
 
@@ -297,9 +298,17 @@ table a.btn{
 	padding: 4px 6px;
 }
 
-a.btn.edit{background: #F4B03E;}
-a.btn.delete{background: #E05C4E;}
-a.btn.order{background: #0091ea;}
+a.btn.edit{
+	background-color: #F4B03E;
+}
+
+a.btn.delete{
+	background-color: #E05C4E;
+}
+
+a.btn.order{
+	background-color: #0091ea;
+}
 
 	/* Paginação */
 
@@ -364,18 +373,20 @@ a.btn.order{background: #0091ea;}
 
 .table-responsive{
 	margin: 20px auto;
-	max-width: 1280px;
+	font-weight: 300;
 }
 
 .table-responsive .row:nth-of-type(1){
-	font-weight: 700;
-	border-bottom: 1px solid #333333;
+	font-weight: normal;
+	background-color: #696969;
+	padding: 10px;
+	color: white;
 }
 
 .table-responsive .row{
-	text-align: center;
-	color: #555555;
-	padding: 8px 0;
+	color: #777777;
+	padding: 8px;
+	border-bottom: 1px solid #cccccc;
 }
 
 .col {
@@ -477,9 +488,9 @@ a.btn.order{background: #0091ea;}
 	background-color: #3a4b51;
 }
 
-/*.menu-active::before{
-	Adicionar Seta para quando estiver selecionado.
-}*/
+.menu-active::before{
+	content: "► ";
+}
 
 .form-group-login label{
 	font-size: 13px;
@@ -490,7 +501,7 @@ a.btn.order{background: #0091ea;}
 
 form .form-group-login:nth-of-type(2){
 	position: relative;
-	top: 10px;
+	top: 15px;
 }
 
 @media screen and (max-width: 1024px){

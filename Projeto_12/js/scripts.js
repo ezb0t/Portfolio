@@ -3,7 +3,7 @@ $(function(){
 	
 	function initialize(){
 	    var mapProp = {
-	        center: new google.maps.LatLng(-27.609959,-48.576585),
+	        center: new google.maps.LatLng(-23.586330988,-46.655330712),
 	        zoom: 14,
 	   	    scrollwheel: false,
 	        styles: [{
@@ -87,7 +87,7 @@ $(function(){
 			
 			setTimeout(function(){
 				initialize();
-				addMarker(-27.609959,-48.576585,'',"Minha casa",undefined,false)
+				addMarker(-23.586330988,-46.655330712,'',"Parque do Ibirapuera",undefined,false)
             },1000)
             
 			$('.container-principal').fadeIn(1000)
